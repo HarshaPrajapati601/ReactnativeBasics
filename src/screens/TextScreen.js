@@ -1,11 +1,14 @@
 import React from 'react';
-import { Text, View, StyleSheet } from 'react-native';
+import { Text, View, StyleSheet, TextInput } from 'react-native';
+
 
 const TextScreen = () => {
 
     return(
-        <View style= {styles.container}>
-            <Text> Text screen</Text>
+        <View >
+            <TextInput
+                style= {styles.input}
+            />
         </View>
     )
 }
@@ -16,6 +19,12 @@ const styles= StyleSheet.create({
         display: 'flex',
         flexDirection: 'row',
         justifyContent: 'center'
+    },
+    input: {
+        margin: 15,
+        borderColor: 'black',
+        borderWidth: 1
+
     }
 });
 export default TextScreen;
